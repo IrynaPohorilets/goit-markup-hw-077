@@ -1,0 +1,160 @@
+@charset "UTF-8";
+:root {
+  /* fonts */
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+  /* text colors */
+  --main-txy-cl: #212121;
+  --sec-txt-cl: #757575;
+  --accet-txt-cl: #2196f3;
+  --white-txt-cl: #ffffff;
+  /* bg color */
+  --darc-bg-cl: #2f303a;
+  --light-bg-cl: #f5f4fa;
+  /* animaeion effect */
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --time-duration: 250ms;
+}
+
+.visuaaly-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
+
+body {
+  font-family: var(--main-font);
+  color: var(--main-txy-cl);
+  background-color: var(--white-txt-cl);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  min-width: 100%;
+  height: auto;
+}
+
+.link {
+  font-size: 14px;
+  line-height: 1.7142857143;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--white-txt-cl);
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.section {
+  padding: 94px 0;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-wrap {
+  height: 600px;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/section-wrap/фон.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/section-wrap/фон.jpg);
+  max-width: 1600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: auto;
+  margin-left: auto;
+  background-size: cover;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.main {
+  background-color: var(--darc-bg-cl);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.3636363636;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-txt-cl);
+}
+
+.general-info {
+  margin: 0 auto;
+  width: 696px;
+  margin-bottom: 30px;
+  font-family: var(--main-font);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.3636363636;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-txt-cl);
+}
+
+.portfolio-button {
+  border: none;
+  background-color: var(--light-bg-cl);
+  border-radius: 4px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  display: inline-block;
+  padding: 6px 22px;
+  -webkit-transition: color var(--time-duration) var(--timing-function), background-color var(--time-duration) var(--timing-function), -webkit-box-shadow var(--time-duration) var(--timing-function);
+  transition: color var(--time-duration) var(--timing-function), background-color var(--time-duration) var(--timing-function), -webkit-box-shadow var(--time-duration) var(--timing-function);
+  transition: color var(--time-duration) var(--timing-function), background-color var(--time-duration) var(--timing-function), box-shadow var(--time-duration) var(--timing-function);
+  transition: color var(--time-duration) var(--timing-function), background-color var(--time-duration) var(--timing-function), box-shadow var(--time-duration) var(--timing-function), -webkit-box-shadow var(--time-duration) var(--timing-function);
+}
+
+.all {
+  background: var(--accet-txt-cl);
+  color: var(--white-txt-cl);
+  background: var(--accet-txt-cl);
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+.work-button {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.portfolio-button:hover,
+.portfolio-button:focus {
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  color: #fff;
+  background-color: var(--accet-txt-cl);
+}/*# sourceMappingURL=main.css.map */

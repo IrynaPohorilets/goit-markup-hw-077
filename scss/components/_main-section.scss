@@ -1,0 +1,24 @@
+.main {
+    background-color: var(--darc-bg-cl);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: calc(60 / 44);
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--white-txt-cl);
+}
+
+.general-info {
+    margin: 0 auto;
+    width: 696px;
+    margin-bottom: 30px;
+    font-family: var(--main-font);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: calc(60 / 44);
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--white-txt-cl);
+}

@@ -1,13 +1,21 @@
 // utils styles
-    @import './utils/variables';
+@import './utils/variables';
+@import './utils/visually-hidden';
 
 // base styles
 @import './base/base';
+@import './base/reset';
 
 // components styles
-
-// замінили на mixin
-// @import './components/section';
+@import './components/section';
+@import './components/container';
+@import './components/background';
+@import './components/main-section';
+@import './components/button-main';
+@import './components/buttons-portfolio';
+@import './components/buttons';
 
 
 // layout styles
+@import './layout/header';
+@import './layout/nav';

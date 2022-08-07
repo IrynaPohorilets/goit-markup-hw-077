@@ -1,0 +1,85 @@
+.nav__list,
+.header-nav-nav {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+}
+
+.nav__link--current {
+    color: var(--accet-txt-cl);
+    transition: color var(--time-duration) var(--timing-function);
+}
+
+.nav__link--current-second {
+    color: var(--accet-txt-cl);
+    transition: color var(--time-duration) var(--timing-function);
+}
+
+.nav__link:hover,
+.nav__link:focus {
+    color: var(--accet-txt-cl);
+}
+.nav__list {
+    display: flex;
+    color: var(--main-txy-cl);
+    align-items: center;
+    gap: 50px;
+}
+
+.nav__link--current {
+    position: relative;
+    color: var(--accet-txt-cl);
+}
+
+.nav__link--current::after {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--accet-txt-cl);
+}
+
+.nav__link--current-second {
+    position: relative;
+    color: var(--accet-txt-cl);
+    padding-bottom: 32px
+}
+
+.nav__link--current-second::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--accet-txt-cl);
+}
+
+/**
+  |============================
+  | Фонове зображення-кінець
+  |============================
+*/
+.nav {
+    display: flex;
+    margin-right: auto;
+}
+.nav__link,
+.nav__link--current,
+.nav__link--current-second .header-mail {
+    display: block;
+    color: var(--main-txy-cl);
+    padding: 32px 0;
+    transition: color var(--time-duration) var(--timing-function);
+}
+
+.nav__link:last-child {
+    margin-right: 0;
+}
